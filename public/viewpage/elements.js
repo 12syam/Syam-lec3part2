@@ -12,7 +12,7 @@ export const MENU = {
 }
 
 //Form
-export const formSignIn = document.getElementById('form-signin');
+//export const formSignIn = document.getElementById('form-signin');
 /*export const formAddProduct = {
     form: document.getElementById('form-add-product'),
     imageTag: document.getElementById('form-add-product-image-tag'),
@@ -30,7 +30,19 @@ export const modalInfobox = {
     body:document.getElementById('modal-infobox-body'),
 }
 
-export const modalSignin = new bootstrap.Modal(document.getElementById('modal-signin'),{backdrop:'static'});
+export const modalTransaction ={
+    modal: new bootstrap.Modal(document.getElementById('modal-transaction'),{backdrop:'static'}),
+    title: document.getElementById('modal-transaction-title'),
+    body: document.getElementById('modal-transaction-body')
+}
 
-//export const modalAddProduct = new bootstrap.Modal(document.getElementById('modal-add-product'),{backdrop:'static'});
-//export const modalEditProduct = new bootstrap.Modal(document.getElementById('modal-edit-product'),{backdrop:'static'});
+export const modalSignin = {
+    modal:new bootstrap.Modal(document.getElementById('modal-signin'),{backdrop:'static'}),
+    form: document.getElementById('form-signin'),
+    showSignupModal: document.getElementById('button-show-signup-modal'),
+}
+
+export const modalSignup = {
+    modal:new bootstrap.Modal(document.getElementById('modal-signup'),{backdrop:'static'}),
+    form: document.getElementById('modal-signup-form'),
+}
